@@ -1,0 +1,60 @@
+
+#myInput{width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+}
+
+#myTable {
+border-collapse: collapse;
+width: 100%;
+border: 1px solid #ddd;
+font-size: 18px;
+}
+
+#myTable th, #myTable td {
+text-align: left;
+padding: 12px;
+}
+
+#myTable tr {
+border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+background-color: #f1f1f1;
+}
+#laptapModel{
+    width: 130px;
+    height: 20px;
+}
+#filterControler{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+}
+#videoLaptap{
+    height: 400px;
+    margin-bottom: 10px;
+}
+.btn{
+    color: white;
+    background-color: blue;
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    border-color: blue;
+}
+
+#filterbtn{
+    background-color: blue;
+    width: 130px;
+    text-align: center;
+}
+img{
+    width: 70px;
+    height: 40px;
+}
+td{
+    font-size: 12px;
+}

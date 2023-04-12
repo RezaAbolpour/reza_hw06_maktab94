@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  href="style.css" rel="stylesheet">
+</head>
+<body>
+    <Video width="100%" height="400" id="videoPlayer">
+        <source src="">
+    </Video>
+    <div id="filterControler">
+        <span>Laptop model:</span>
+        <span>Processer:</span>
+        <span>RAM:</span>
+        <span>Hard disk:</span>
+        <span>Display:</span>
+    </div>
+    <div id="filterControler">
+        <select id="laptapModel">
+            <option value="test1">Acer</option>
+            <option value="test2">Del</option>
+            <option value="test3">Ause</option>
+        </select>
+        <select id="laptapModel" aria-placeholder="gdhdd">
+            <option value="test1">i7</option>
+            <option value="test2">i5</option>
+            <option value="test3">i3</option>
+        </select>
+        <span id="filterbtn">RAM</span>
+        <span id="filterbtn">Hard disk</span>
+        <select id="laptapModel">
+            <option value="test1">15.6 Inches</option>
+            <option value="test2">20 Inches</option>
+            <option value="test3">25 Inches</option>
+        </select>
+    </div>
+    
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="search...">
+    <div style="height: 390px; overflow: auto;">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Laptop model</th>
+                    <th>Picture</th>
+                    <th>Processer</th>
+                    <th>RAM</th>
+                    <th>Hard disk</th>
+                    <th>Display</th>
+                    <th>Graphics</th>
+                    <th>OS</th>
+                    <th>Weight</th>
+                    <th>Battery</th>
+                    <th>Price</th>
+                    <th>Purchase</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="getRaw(this)">
+                    <td>Acer</td>
+                    <td>
+                        <img alt="test" src="image/predator.jpg">
+                    </td>
+                    <td>7700 HQ</td>
+                    <td>16 ddr3</td>
+                    <td>1T ssd</td>
+                    <td>15.6 Inches</td>
+                    <td>GTX 1060</td>
+                    <td>Windows 10</td>
+                    <td>5.95 pounds</td>
+                    <td>2 Lithium Metal batteries required.</td>
+                    <td>1000$</td>
+                    <td>
+                        <button class="btn">Buy now</button>
+                    </td>
+                </tr>
+                <tr onclick="getRaw(this)">
+                    <td>LENOVO</td>
+                    <td>
+                        <img alt="test" src="image/Asus-L510-ultra.jpg">
+                    </td>
+                    <td>Intel HD</td>
+                    <td>4 ddr4</td>
+                    <td>256 hdd</td>
+                    <td>15.6 Inches</td>
+                    <td>n4020</td>
+                    <td>Windows 10</td>
+                    <td>1.67 kg</td>
+                    <td>6 cell</td>
+                    <td>300$</td>
+                    <td>
+                        <button class="btn">Buy now</button>
+                    </td>
+                </tr>
+                <tr onclick="getRaw(this)">
+                    <td>DELL</td>
+                    <td>
+                        <img alt="test" src="image/dell-inspiron-n5110-core-i3-used-laptop.jpg">
+                    </td>
+                    <td>Intel</td>
+                    <td>6 ddr3</td>
+                    <td>500 hdd</td>
+                    <td>15.6 Inches</td>
+                    <td>GeForcr 1030</td>
+                    <td>Windows 7</td>
+                    <td>2.5 kg</td>
+                    <td>4 cell</td>
+                    <td>150$</td>
+                    <td>
+                        <button class="btn">Buy now</button>
+                    </td>
+                </tr>
+                
+                <tr onclick="getRaw(this)">
+                    <td>ASUS</td>
+                    <td>
+                        <img alt="test" src="image/Lenovo-IdeaPad-3-1.jpg">
+                    </td>
+                    <td>intel Core i7</td>
+                    <td>12 ddr3</td>
+                    <td>512 ssd</td>
+                    <td>15.6 Inches</td>
+                    <td>GeForcr MX450</td>
+                    <td>Windows 11</td>
+                    <td>1.65 kg</td>
+                    <td>6 cell</td>
+                    <td>700$</td>
+                    <td>
+                        <button class="btn">Buy now</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
